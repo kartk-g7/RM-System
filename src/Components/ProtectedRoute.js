@@ -30,7 +30,7 @@ function ProtectedRoute({ children, role }) {
   }, [role]);
 
   if (loading) return <h2 style={{ textAlign: "center" }}>Loading...</h2>;
-  if (!authorized) return <Navigate to="/login" />;
+  if (!authorized) return <Navigate to="/" />;
 
   return children;
 }
